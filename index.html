@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "shortcut icon" type="x-icon" href="BOOKSTA.png">
+        <title>BOOKSTA</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/0cae503238.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href = "#" class="logo"><img src="BOOKSTA.jpg"></a>
+                <ul>
+                    <li><i class="fa-solid fa-magnifying-glass" style="color: #CDC7C4;"></i></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Second-hand</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+            <div class="context">
+                <div class="texts">
+                    <br>
+                    <h2>WHERE 'TOO MANY BOOKS'<br> IS <span>NEVER </span> ENOUGH!</h2>
+                    <p>Welcome to <text style="font-family: 'Poppins'; font-weight: 300; color: #441A03;"><b>BOOKSTA</b></text>, your one-stop destination for all things books!<br>
+                    Whether you're in search of brand new releases, timeless classics, or second-hand treasures, we've got you covered. Our shelves are stocked with a diverse selection of titles to cater to every reader's preference. Plus, we're passionate about promoting sustainable reading habits, so we gladly accept your old books as donations. Not only can you declutter your bookshelves, but you can also contribute to the literary community. And don't forget to explore our "New Arrivals" section, where you'll find the latest and most exciting books hot off the press. Happy reading!</p>
+                    <br><a href="#">Explore</a>
+                </div>
+                <div class="slides">
+                    <img src="img1.png" class="booksta">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="thumb1.jpg" onclick="imgSlider('img1.png'); changeCircleColor('#441A03')"></li>
+                <li><img src="thumb2.jpg" onclick="imgSlider('img2.png'); changeCircleColor('#A8848A')"></li>
+                <li><img src="thumb3.jpg" onclick="imgSlider('img3.png'); changeCircleColor('#059AB5')"></li>
+                <li><img src="thumb4.jpg" onclick="imgSlider('img4.png'); changeCircleColor('#DF7C40')"></li>
+            </ul>
+            <ul class="log">
+                <li><a href="#"><i class="fa-brands fa-facebook-f" style="color: white;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp" style="color: #fff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram" style="color: #fff;"></i></a></li>
+            </ul>
+        </section>
+
+        <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.booksta').src = anything;
+            }
+            function changeCircleColor(color){
+                const circle = document.querySelector('.circle');
+                circle.style.background = color;
+            }
+        </script>
+    </body>
+</html>
